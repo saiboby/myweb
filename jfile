@@ -1,0 +1,16 @@
+pipeline{
+	agent any
+	stages{
+		stage('pull the code'){
+			steps{
+				sh """
+				export M2_HOME=/opt/maven
+				export PATH=$PATH:/opt/maven/bin
+				echo 'sai'
+				mvn --version
+				"""
+			}
+		}
+		
+	}
+}
