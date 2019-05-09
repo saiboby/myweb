@@ -8,6 +8,7 @@ pipeline{
 				export PATH=$PATH:/opt/maven/bin
 				echo 'sai'
 				mvn --version
+				mvn install
 				"""
 			}
 		}
